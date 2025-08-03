@@ -2,17 +2,17 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="bg-white p-2 flex justify-between">
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" className="text-orange-500 font-bold text-3xl">
+            Shiv-Store
+          </Link>
         </li>
-        <li>
-          <Link href="/">Products</Link>
-        </li>
-        <li>
-          <Link href="/">Product - p1</Link>
-        </li>
+        <div className="text-orange-500 px-4 py-2 font-bold hover:text-red-600 hover:cursor-pointer">
+          Cart
+          <span> (0)</span>
+        </div>
       </ul>
     </nav>
   );
