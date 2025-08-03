@@ -4,7 +4,7 @@ import "./global.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gray-300">
         <Navbar></Navbar>
         {children}
       </body>
